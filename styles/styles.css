@@ -3,13 +3,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
 
-body{
-    background-color: #E5E5E5;
+/*===== VARIABLES CSS =====*/
+:root {
+	--header-height: 3rem;
+
+    /*========== Colors ==========*/
+	--gelo:#E5E5E5;
+	--azul: #654ac9;
+	--preto: #000000;
+	--branco: #ffffff;
+    --rosa: #FF5374;
+    --grafite: #535971
 }
+
+
+
+body{
+    background-color: var(--gelo);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+    
 
 header.cabecalho{
     display: flex;
-    background-color: rgb(85, 85, 201);
+    background-color: var(--azul);
     min-height: 40vh;
     width: 100vw;
 }
@@ -18,18 +38,18 @@ header.cabecalho > div{
     display: block;
     width: 50vw;
     margin: auto;
-    outline: 1px solid black;
+    outline: 1px solid var(--preto);
     bottom: 0px;
 }
 
 header.cabecalho > div > h1{
     font-family: 'Staatliches', cursive;
-    color: white;
+    color: var(--branco);
     font-size: 2em;
 }
 
 header.cabecalho > div > p{
     font-family: 'Staatliches', cursive;
-    color: white;
+    color: var(--branco);
     padding-top:15px;
 }
