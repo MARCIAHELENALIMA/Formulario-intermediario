@@ -1,5 +1,5 @@
-/* Estilos gerais */
 
+/*========== Fonts ==========*/
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Staatliches&display=swap');
 
@@ -13,11 +13,14 @@
 	--preto: #000000;
 	--branco: #ffffff;
     --rosa: #FF5374;
-    --grafite: #535971
+    --grafite: #535971;
+
+    /*========== Fonts ==========*/
+    --fonte-poppins: 'Poppins';
+    --fonte-Staatliches: 'Staatliches';
 }
 
-
-
+/*========== gerais ==========*/
 body{
     background-color: var(--gelo);
     min-height: 100vh;
@@ -26,7 +29,7 @@ body{
     overflow-x: hidden;
 }
     
-
+/*========== header ==========*/
 header.cabecalho{
     display: flex;
     background-color: var(--grafite);
@@ -44,13 +47,13 @@ header.cabecalho > div{
 }
 
 header.cabecalho > div > h1{
-    font-family: 'Staatliches', cursive;
+    font-family: var(--fonte-Staatliches);
     color: var(--branco);
     font-size: 35px;
 }
 
 header.cabecalho > div > p{
-    font-family: 'Poppins', cursive;
+    font-family: var(--fonte-poppins);
     width: 25vw;
     color: var(--branco);
     font-weight: 300;
@@ -59,7 +62,8 @@ header.cabecalho > div > p{
     line-height: 1.5em;
 }
 
-section.form{
+/*========== Form ==========*/
+section .form{
     background-color: var(--branco);
     width: 50vw;
     margin: auto;
@@ -71,14 +75,15 @@ section.form{
     flex-direction: column;
 }
 
-div.inputBox{
+
+div .inputBox{
     width: 38vw;
     height: 38vh;
     margin: 55px auto 0px auto;
 }
 
 div.titulo-sec{
-    font-family: 'Staatliches', cursive;
+    font-family: var(--fonte-Staatliches);
     font-size: 30px;
     font-weight: 400;
     color: var(--grafite);
@@ -91,7 +96,6 @@ div.campos-form{
     margin-top: 20px;
     flex-wrap: wrap;
 }
-
 
 div.nome{
     margin-right: 4%;
@@ -112,7 +116,7 @@ div.campos-form div input{
 }
 
 div.campos-form label{
-    font-family: 'Poppins', cursive;
+    font-family: var(--fonte-poppins);
     font-size: 14px;
 }
 
