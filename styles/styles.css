@@ -14,6 +14,7 @@
 	--branco: #ffffff;
     --rosa: #FF5374;
     --grafite: #535971;
+    --cinza: #b9b9b9;
 
     /*========== Fonts ==========*/
     --fonte-poppins: 'Poppins';
@@ -30,31 +31,33 @@ body{
 }
     
 /*========== header ==========*/
-header.cabecalho{
+.cabecalho{
     display: flex;
     background-color: var(--grafite);
     min-height: 52vh;
     width: 100vw;
 }
 
-header.cabecalho > div{
-    display: block;
-    
+.cabecalho div{
+    display: flex;
+    padding-right: 14em;
     transform: translateY(-3vh);
     width: 50vw;
     margin: auto;
-    bottom: 0px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-header.cabecalho > div > h1{
+.cabecalho h1{
     font-family: var(--fonte-Staatliches);
     color: var(--branco);
-    font-size: 35px;
+    font-size: 48px;
 }
 
-header.cabecalho > div > p{
+.cabecalho p{
     font-family: var(--fonte-poppins);
-    width: 25vw;
+    width: 60%;
     color: var(--branco);
     font-weight: 300;
     padding-top:20px;
@@ -63,11 +66,11 @@ header.cabecalho > div > p{
 }
 
 /*========== Form ==========*/
-section .form{
+.form{
     background-color: var(--branco);
-    width: 50vw;
+    width: 750px;
     margin: auto;
-    height: 100vh;
+    Height: 1084px;
     margin-top: -15vh;
     margin-bottom: 23vh;
     border-radius: 30px;
@@ -76,36 +79,60 @@ section .form{
 }
 
 
-div .inputBox{
-    width: 38vw;
-    height: 38vh;
-    margin: 55px auto 0px auto;
+.inputBox{
+    width: 622px;
+    height: 382px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 20px;
 }
 
-div.titulo-sec{
+input[type="submit"]{
+    border: none;
+    outline: none;
+    /* padding: 15px 40px 15px 14px; */
+    background: var(--rosa);
+    cursor: pointer;
+    height: 55px;
+    border-radius: 23px;
+    font-weight: 400;
+    width: 608px;
+    color: var(--branco);
     font-family: var(--fonte-Staatliches);
-    font-size: 30px;
+    font-size: 22px;
+}
+    
+
+input[type="submit"]:active {
+	opacity: 0.8;
+}
+
+.titulo-sec{
+    font-family: var(--fonte-Staatliches);
+    font-size: 25px;
     font-weight: 400;
     color: var(--grafite);
     height: 5vh;
-    border-bottom: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid var(--cinza);
+    padding-bottom: 18px;
 }
 
-div.campos-form{
+.campos-form{
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
 }
 
-div.nome{
+.nome{
     margin-right: 4%;
     width: 48%;
 }
-div.sobrenome{
+.sobrenome{
     width: 48%;
 }
 
-div.campos-form div input{
+.campos-form input{
     display: inline-block;
     border: 1px solid #c7c7c7;
     width: 100%;
@@ -115,7 +142,7 @@ div.campos-form div input{
     margin-top: 10px;
 }
 
-div.campos-form label{
+.campos-form label{
     font-family: var(--fonte-poppins);
     font-size: 14px;
 }
