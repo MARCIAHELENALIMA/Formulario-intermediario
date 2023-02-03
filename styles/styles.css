@@ -40,9 +40,8 @@ body{
 
 .cabecalho div{
     display: flex;
-    padding-right: 2em;
     transform: translateY(-3vh);
-    width: 50vw;
+    width: 750px;
     margin: auto;
     padding-bottom: 50px;
     flex-direction: column;
@@ -78,6 +77,12 @@ body{
     flex-direction: column;
 }
 
+section form{
+    height: 100%;
+    position: relative;
+
+}
+
 .titulo-sec{
     font-family: var(--fonte-Staatliches);
     font-size: 25px;
@@ -88,12 +93,12 @@ body{
     height: 5vh;
     border-bottom: 1px solid var(--cinza);
     padding-bottom: 1px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .inputBox{
     width: 622px;
-    height: 382px;
+    height: max-content;    
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -189,11 +194,24 @@ input[type="submit"]{
     color: var(--branco);
     font-family: var(--fonte-Staatliches);
     font-size: 22px;
+    margin: auto;
 }
     
 
 input[type="submit"]:active {
 	opacity: 0.8;
+}
+
+div.div-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 0px 30px 30px;
+    background-color: var(--grafite);
+    height: 150px;
+    width: 750px;
+    position:absolute;
+    bottom: 0px;
 }
 
 
