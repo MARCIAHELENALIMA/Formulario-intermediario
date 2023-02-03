@@ -109,7 +109,7 @@ body{
 
 .inputBox input{
     display: inline-block;
-    border: 1px solid var(--grafite);
+    border: 1px solid var(--gelo);
     width: 100%;
     height: 7vh;
     border-radius: 10px;
@@ -135,9 +135,10 @@ body{
    width: 100%;
 }
 
-.wrapper-date{
+.wrapper-date {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .text-date{
@@ -147,6 +148,15 @@ body{
     font-size: 20px;
     color: var(--grafite);
     line-height: 34px;
+}
+
+.info-data{
+    width: 70%;
+}
+
+.info-hora{
+    width: 25%;
+    margin-left: 15px;
 }
 
 .info-hora input{
@@ -159,16 +169,12 @@ body{
 }
 
 .info-data input{
-    width: 100%;
+    width: 90%;
     height: 7vh;
     border-radius: 10px;
     background-color: var(--cinza);
     margin-top: 7px;
     box-sizing: border-box;
-}
-
-.info-data input{
-    width: 60%;
 }
 
 input[type="submit"]{
