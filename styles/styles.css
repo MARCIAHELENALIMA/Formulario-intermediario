@@ -69,7 +69,7 @@ body{
     background-color: var(--branco);
     width: 750px;
     margin: auto;
-    Height: 1084px;
+    Height: 1184px;
     margin-top: -15vh;
     margin-bottom: 23vh;
     border-radius: 30px;
@@ -91,9 +91,9 @@ section form{
     margin-bottom: 20px;
     color: var(--grafite);
     height: 5vh;
-    border-bottom: 1px solid var(--cinza);
+    border-bottom: 1px solid var(--gelo);
     padding-bottom: 1px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .inputBox{
@@ -153,6 +153,7 @@ section form{
     font-size: 20px;
     color: var(--grafite);
     line-height: 34px;
+    margin-top: 20px;
 }
 
 .info-data{
